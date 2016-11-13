@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Bootstrap<small>表单排版</small></h1>
+
+			
+			<!--定义表格-->
+			<form class="form-horizontal">
+				<!--通过fieldset 和legend 两个标签，可以用于表单标签的编写-->
+				<fieldset>
+					<legend>用户登陆</legend>
+
+					<div class="control-group">
+						<label class="control-label" for="username">用户名</label>
+						<div class="controls">
+							<input type="text" id="username" placeholder="输入用户名"/>
+							<span class="help-block"> 用户名不可以为空</span>
+						</div>
+					</div>
+
+
+					<div class="control-group">
+						<label class="control-label" for="password">密码</label>
+						<div class="controls">
+						<input type="password" placeholder="输入密码" id="password"/>
+						<p class="help-block">输入设定的密码</p>
+					</div>
+
+					<div class="form-actions">
+						<input type="submit" class="btn btn-primary" value="登陆"/>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

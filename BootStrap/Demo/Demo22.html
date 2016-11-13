@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!--导入jS-->
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/"jquery-1.8.3.js></script>
+
+	    <!--导入 css-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="page-header">Bootstrap<small>对话框</small></h1>
+		<a href="#" class="btn btn-danger" data-toggle="modal">点击登录</a>
+		<!--
+			hide
+		设定对话框影藏
+		fade 
+		设定动画弹出对话框
+		-->
+		<div class="modal hide fade" id="login">
+		<!--设定为对话框的头-->
+		<div class="modal-header">
+		<!--设定关闭对话框  其中后面的数据需要使用 乘号-->
+		<a href="#" class="close" data-dismiss="modal">×</a>
+		<h4>用户登录</h4>
+		<!--
+		设定表单横向显示
+		其中我们需要的是，将这些表单的重要的类 记住就可以了
+		-->
+		</div>
+		
+		<!--对话框的体-->
+		<div class="modal-body">
+		<form class="form-horizontal">
+			<!--设定组-->
+			<div class="control-group">
+				<label class="control-label">用户名</label>
+				<div class="controls">
+					<input type="text"/>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label">密码</label>
+				<div class="controls">
+					<input type="password"/>
+				</div>
+			</div>
+		</form>
+		</div>
+		<!--设定对话框的尾-->
+		<div class="modal-footer">
+		<button type="button" class="btn btn-primary">登录</button>
+		</div>
+		</div>
+	</div>
+
+</body>
+</html>

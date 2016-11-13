@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<!--导入js文件-->
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="page-header">Bootstrap<small>选项卡</small></h1>
+		<div class="tabbable tabs-left">
+		
+		<!--
+		
+		nav-tabs 设定数据显示是以选项卡显示
+		nav-stacked 将数据，像堆栈一样显示
+		nav-pills 将数据以堆栈的方式显示，但是没有框
+		-->
+
+		<ul class="nav nav-tabs" class="">
+			<li class="active"><a href="#tab1" data-toggle="tab">Java</a></li>
+			<li><a href="#tab2" data-toggle="tab">English</a></li>
+			<li><a href="#tab3" data-toggle="tab">Wife</a></li>
+		</ul>
+		<!--
+		通过添加fade来添加事件效果
+		-->
+		<div class="tab-content">
+			<div class="tab-pane active fade in" id="tab1"><p>Java 是我们必须学习的</p></div>
+			<div class="tab-pane fade " id="tab2"><p>English 必须过8级</p></div>
+			<div class="tab-pane fade" id="tab3"><p>外国老婆是必须滴</p></div>
+		</div>
+	 </div>
+		
+	</div>
+</body>
+</html>
