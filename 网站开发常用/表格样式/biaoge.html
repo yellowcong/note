@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .input-text
+        {
+            border: 1px solid #C3CED9;
+            border-radius: 5px 5px 5px 5px;
+            font-size: 14px;
+            height: 31px;
+            line-height: 31px;
+            margin-right: 10px;
+            padding: 0;
+            width: 200px;
+        }
+    </style>
+
+	<script type="text/javascript" src=">/resources/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		//点击后的样式
+		$(".input-text").click(function(){
+			//点击后的数据
+			$(this).css("border","1px solid #30A0FF");
+		});
+		//移除焦点的情况，会设定数据没有了，更改为原来的颜色
+		$(".input-text").focusout(function(){
+			$(this).css("border","1px solid #C3CED9");
+		});
+	});
+</script>
+</head>
+<body>
+    <input type="text" id="1" class="input-text" />
+</body>
+</html>
